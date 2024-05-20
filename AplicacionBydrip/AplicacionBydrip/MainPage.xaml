@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="namespace:AppBydrip.View" xmlns:local1="clr-namespace:AplicacionBydrip"
+             x:Class="AplicacionBydrip.MainPage"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!-- Logo -->
+            <Image Source="logo.png" 
+                   HeightRequest="100"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+
+            <!-- Encender Button -->
+            <Button Text="Encender" 
+                    BackgroundColor="#3B3B98"
+                    TextColor="White"
+                    FontSize="Large"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center" />
+
+            <!-- Progreso de Regado -->
+            <StackLayout Padding="10">
+                <Label Text="Progreso de Regado" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <ProgressBar Progress="0.5" 
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+            <!-- Información de Tiempo -->
+            <StackLayout Padding="10">
+                <Label Text="Tiempo" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <Label Text="30 ºC" 
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                    <Label Text="Soleado" 
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Información de Humedad -->
+            <StackLayout Padding="10">
+                <Label Text="Humedad" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+                <Label Text="63%" 
+                       TextColor="White"
+                       FontSize="Medium"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
